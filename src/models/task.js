@@ -21,7 +21,7 @@ export const TaskSchema = new Schema(
       required: true
     },
     user: {
-      type: [UserSchema],
+      type: Schema.Types.ObjectId,
       ref: 'User'
     }
   },
